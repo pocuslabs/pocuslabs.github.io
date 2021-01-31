@@ -350,14 +350,29 @@ template {
 
 body {
   margin: 0 auto;
-  width: 50em;
   font-size: 16px;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lora", serif;
+}
+
+#root {
+  display: grid;
+  grid-template-rows: [mainheader] 120px [main] auto [mainfooter] 80px;
+  grid-template-columns: [lgutter] auto [main] 50em [rgutter] auto;
+  grid-gap: 1em;
 }
 
 #header {
   display: flex;
   justify-content: space-between;
+  grid-row: mainheader/span 1;
+  grid-column: 1/-1;
+  padding: 2em;
 }
 #header .title-group {
   display: flex;
@@ -373,6 +388,27 @@ body {
 }
 #header #nav ol li {
   margin: 4px 8px;
+}
+
+#main {
+  grid-row: 2/span 1;
+  grid-column: main/span 1;
+  padding: 2em 0;
+}
+
+section header {
+  display: flex;
+  align-items: baseline;
+}
+section header .quip {
+  margin-left: 0.75em;
+}
+
+#footer {
+  grid-row: mainfooter/span 1;
+  grid-column: 1/-1;
+  padding: 2em;
+  padding-top: 0;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
