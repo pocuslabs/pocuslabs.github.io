@@ -4,6 +4,8 @@
     <title>Pocus Labs - a creative software studio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -36,7 +38,7 @@
         <section id="intro">
 
         </section>
-        
+
         <section id="about-me">
           <header class="section-header">
             <h3 class="section-title">about me</h3>
@@ -98,11 +100,64 @@
                   </div>
                 </div>
               </li>
+
+              <li class="project-item">
+                <div class="project-card">
+                  <header>
+                    <h4 class="project-name"><a href="https://foxie-lang.org" target="_blank" rel="noopener noreferrer">Foxie</a></h4>
+                    <h5 class="project-tagline">A language for creating your own old-school RPG like Chrono Trigger or Final Fantasy</h5>
+                  </header>
+
+                  <div class="description">
+                    <p>
+                      Foxie is an ongoing project, one that's been set on the back burner for some time now. Eventually, it'll be a domain-specific language for creating your own old style RPG, in the same vein as Final Fantasy (the 2D ones). Eventually, it'll allow you to do things like:
+                    </p>
+
+                    <ul class="benefits regular-style">
+                      <li class="benefit">Script conversations with characters in the game</li>
+                      <li class="benefit">Create a stat-based battle system (or something more nondeterministic)</li>
+                      <li class="benefit">Define quests that the player can complete to progress in the game</li>
+                      <li class="benefit">Offer custom-made items that give the player superpowers</li>
+                    </ul>
+
+                    <p>
+                      Of course, this is only scratching the surface, hence the back burner status. Still, you can read about the progress I've made so far on the <a href="https://foxie-lang.org" target="_blank" >Foxie language blog</a>!
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="project-item">
+                <div class="project-card">
+                  <header>
+                    <h4 class="project-name"><a href="https://austinpocus.com/tags/vonnegut/" target="_blank" rel="noopener noreferrer">Vonnegut</a></h4>
+                    <h5 class="project-tagline">With all respect to the late, great Kurt Vonnegut</h5>
+                  </header>
+
+                  <div class="description">
+                    <p>
+                      Vonnegut is an engine, or system, or whatever you want to call it, that I worked on recently to build out interactive fiction, or "IF", in the web browser (like a "choose your own adventure" book!). As it turns out, building an IF engine in plain HTML + CSS + vanilla JS is pretty simple, if you take advantage of anchor links (e.g. "#about") and the "hashchange" event, along with a simple CSS transition animation. With this engine, plus a few additions like data attribute-based triggers, you could:
+                    </p>
+
+                    <ul class="benefits regular-style">
+                      <li class="benefit">Use simple HTML to define each section of your story</li>
+                      <li class="benefit">Create branching stories with multiple endings</li>
+                      <li class="benefit">Take advantage of thd browser's built-in features like links, the back button, etc.</li>
+                    </ul>
+
+                    <p>
+                      Of course, there was also complexity that arose from trying to do interesting things with the fiction I was writing. For example, if you chose to smoke a cigarette in the story, I wanted to reduce your "luck score" by 10 every time. This required some sort of data attributes and more complex scripting, but it was still manageable. All the same, I'm sure most authors don't want to write crazy HTML attributes throughout their stories...
+                    </p>
+                      
+                    <p>
+                      The next step is to release the base of the engine I made, as an example, then think about how this might work in a more usable system (<em>especially</em> with regards to visualizing the story as an author).
+                    </p>
+                  </div>
+                </div>
+              </li>
             </ol>
           </div>
         </section>
-
-        
 
         <section id="contact">
           <header class="section-header">

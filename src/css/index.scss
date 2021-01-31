@@ -1,9 +1,32 @@
+body {
+  margin: 0 auto;
+  width: 50em;
+  font-size: 16px;
+  font-family: "Libre Baskerville", serif;
+}
+
 #header {
   display: flex;
+  justify-content: space-between;
 
-  img.logo {
-    width: 100px;
-    height: 100px;
-    align-self: center;
+  .title-group {
+    display: flex;
+    
+    img.logo {
+      width: 100px;
+      height: 100px;
+      align-self: center;
+    }
+  }
+
+  #nav {    
+    ol {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin: 4px 8px;
+      }
+    }
   }
 }
