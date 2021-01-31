@@ -362,7 +362,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #root {
   display: grid;
-  grid-template-rows: [mainheader] 120px [main] auto [mainfooter] 80px;
+  grid-template-rows: [mainheader] auto [main] auto [mainfooter] auto;
   grid-template-columns: [lgutter] auto [main] 50em [rgutter] auto;
   grid-gap: 1em;
 }
@@ -373,6 +373,12 @@ h1, h2, h3, h4, h5, h6 {
   grid-row: mainheader/span 1;
   grid-column: 1/-1;
   padding: 2em;
+}
+#header h1#title {
+  margin-bottom: 8px;
+}
+#header h2 {
+  margin-top: 12px;
 }
 #header .title-group {
   display: flex;
