@@ -401,13 +401,39 @@ h1, h2, h3, h4, h5, h6 {
   grid-column: main/span 1;
   padding: 2em 0;
 }
-
-section header {
+#main section header {
   display: flex;
   align-items: baseline;
 }
-section header .quip {
+#main section header .quip {
   margin-left: 0.75em;
+  font-style: italic;
+}
+
+#projects ol, #projects ul {
+  list-style: none;
+}
+#projects .regular-list {
+  list-style: circle;
+}
+#projects .project-card {
+  border: 3px solid rgba(50, 50, 50, 0.5);
+  padding: 1em;
+  margin: 1em;
+}
+#projects .project-card header {
+  display: flex;
+  flex-direction: column;
+}
+#projects .project-card header .project-name {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+#projects .project-card header .project-tagline {
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 0;
 }
 
 #footer {
