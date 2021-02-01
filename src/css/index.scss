@@ -58,15 +58,49 @@ h1, h2, h3, h4, h5, h6 {
   grid-row: 2 / span 1;
   grid-column: main / span 1;
   padding: 2em 0;
+
+  section {
+    header {
+      display: flex;
+      align-items: baseline;
+  
+      .quip {
+        margin-left: 0.75em;
+        font-style: italic;
+      }
+    }
+  }
 }
 
-section {
-  header {
-    display: flex;
-    align-items: baseline;
+#projects {
+  ol, ul {
+    list-style: none;
+  }
 
-    .quip {
-      margin-left: 0.75em;
+  .regular-list {
+    list-style: circle;
+  }
+
+  .project-card {
+    border: 3px solid rgba(50, 50, 50, 0.5);
+    padding: 1em;
+    margin: 1em;
+
+    header {
+      display: flex;
+      flex-direction: column;
+
+      .project-name {
+        font-size: 2em;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .project-tagline {
+        font-weight: bold;
+        font-size: 1em;
+        margin-top: 0;
+      }
     }
   }
 }
